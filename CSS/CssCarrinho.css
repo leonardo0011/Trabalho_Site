@@ -1,0 +1,155 @@
+*{
+    /* aqui esta tirando toda a formatação padrão do google */
+    margin: 0;
+    padding: 0; 
+}
+
+a{
+    /* Remove o sublinhado de todos os links */
+    text-decoration: none;
+}
+
+.LinhaSuperior{
+    /* faixa branca no superior da pagina */
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: #E9E9E9;
+    padding: 5px;
+}  
+
+body{
+    /* Aqui configuramos a cor de fundo e como vai ser ordenado o resto do site em colunas */
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #E33737, #7D1E1E);
+    overflow-x: hidden;
+}
+
+.inicioHome{
+    /* Aqui é a configuração do cabeçalho tentamos fazer para ser responsivo com o tamanha da tela mas recomendavos ver pela tela do computador 16:9 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    height: 200px;
+}
+
+#barraInicio{
+    /* Aqui é a formatação do texto do cabeçalho */
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: #FFD600;
+}
+
+#carrinho, #infos{
+    /* Aqui configura o tamanho da tabela do carrinho e a área das informações*/
+    margin: 7vw;
+    margin-top: 30px;
+}
+
+#carrinho > h1, #infos > h1{
+    /* Aqui coloca os H1 um pouco para a esquerda da tabela e da entrada das infos */
+    margin-left: -1vw;
+    margin-bottom: 60px;
+    color: white;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#info_inputs{
+    /* Aqui diz que as infos vai ficar em 2 colunas pq elas estão separadas em 2 div no html */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+table {
+    /* Aqui configura o tamanho da tabela e a sua borda */
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    /* Aqui diz a cor e a forte da tabela */
+    border: 1px solid #A6A6A6;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+td:nth-child(1) {
+    /* aqui diz que a primeira linha desta tabela tera um cor diferente das demais */
+    text-align: left;
+}
+
+th {
+    background-color: #DADADA;
+    color: #292929;
+}
+
+#info_inputs{
+    margin-top: 0;
+}
+
+#inputs{
+    /* Aqui esta definindo a forte e o tamanho das letras */
+    color: white;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    width: 35vw;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+#inputs > input{
+    /* Aqui Esta definindo o tamanho dos inputs do HTML */
+    width: 100%;
+    height: 30px;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+#botoes{
+    /* Aqui configura a loc dos botões */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 7vw;
+    margin-top: 0;
+}
+
+#botao_padrao{
+    /* Css padrão dos botão */
+    width: 20vw;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 9px;
+    color: #FF0000;
+    font-size: 25px;
+    font: bold;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke-color: #00000000;
+    cursor: pointer;
+}

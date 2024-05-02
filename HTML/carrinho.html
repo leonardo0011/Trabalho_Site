@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logo da empresa no aba do site no google -->
+    <link rel="shortcut icon" href="../IMG/LogoComFundo.jpeg" type="image/x-icon">
+    <!-- Links do CSS e das fontes utilizadas no site, Usado o Google Fonts -->
+    <link rel="stylesheet" href="../CSS/CssCarrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="../JS/teste.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Aqui é a faxa branca na parte mais ao topo do site com a logo de onde seria os links das redes sociais -->
+    <div class="LinhaSuperior">
+        <img src="../IMG/tiktokSemFundo.png" alt="ImgTikTok" width="39" height="39" style="margin-right: 10px;">
+        <img src="../IMG/InstaSemFundo.png" alt="ImgInsta" width="42" height="39">
+        <img src="../IMG/FaceSemFundo.png" alt="ImgFace" width="41" height="39">
+    </div>
+
+    <!-- Aqui tem o cabeçalho do site com o link para redirecionar para as outras abas, 
+    sendo o do meio a logo da empresa que clicando volta para a tela inicial    -->
+    <nav class="inicioHome">
+        <a href="cardapio.html">
+            <p id="barraInicio">Cardápio</p>
+        </a>
+        <a href="cardapio.html">
+            <p id="barraInicio">Kit Festa</p>
+        </a>
+        <a href="../index.html">
+            <img src="../IMG/LogoSemFundo.png" height="180px" width="180px">
+        </a>
+        <a href="sobre.html">
+            <p id="barraInicio">Sobre</p>
+        </a>
+        <a href="carrinho.html">
+            <p id="barraInicio">Carrinho</p>
+        </a>
+    </nav>
+
+
+    <!-- Aqui tem a tabel dos produtos selecionado no cardapio pelo cliente para comprar -->
+    <div id="carrinho">
+        <h1>
+            Carrinho de compras
+        </h1>
+        <div id="carrinho_produtos">
+            <table>
+                <thead>
+                    <!-- Aqui tem o identificados das colunas -->
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>SubTotal</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui tem os produtos selecionados -->
+                    <tr>
+                        <td style="display: flex;">
+                            <img src="../IMG/paoqueijo.png" alt="Img_Prod" height="80px" style="margin-right: 1vw;">
+                            <h1>Centro de Salgados<br>Misto</h1>
+                        </td>
+                        <td style="font-size: 3vw;">2</td>
+                        <td style="font-size: 2vw;">R$75,00</td>
+                        <td style="font-size: 2vw;">R$150,00</td>
+                        <td style="font-size: 4vw; font-family: Arial, Helvetica, sans-serif;" onclick="remover()">X</td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex;">
+                            <img src="../IMG/paoqueijo.png" alt="Img_Prod" height="80px" style="margin-right: 1vw;">
+                            <h1>Centro de Brigradeiro<br>Misto</h1>
+                        </td>
+                        <td style="font-size: 3vw;">3</td>
+                        <td style="font-size: 2vw;">R$100,00</td>
+                        <td style="font-size: 2vw;">R$300,00</td>
+                        <td style="font-size: 4vw; font-family: Arial, Helvetica, sans-serif;" onclick="remover()">X</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+    
+
+    <!-- Aqui tem as entradas de informação do cliente como Nome, Tel, E-mail, Cidade, Bairro e Log+n° -->
+    <div id="infos">
+        <h1>
+            Informações Pessoais
+        </h1>
+        <div id="info_inputs">
+            <div>
+                <div id="inputs">
+                    <h1 id="txt_input">Nome Completo</h1>
+                    <input type="text" id="inp_nome">
+                </div>
+                <div id="inputs">
+                    <h1 id="txt_input">Telefone</h1>
+                    <input type="text" id="inp_tel">
+                </div>
+                <div id="inputs">
+                    <h1 id="txt_input">E-Mail</h1>
+                    <input type="text" id="inp_email">
+                </div>
+            </div>
+            <div>
+                <div id="inputs">
+                    <h1 id="txt_input">Cidade</h1>
+                    <input type="text" id="inp_cidade">
+                </div>
+                <div id="inputs">
+                    <h1 id="txt_input">Bairro</h1>
+                    <input type="text" id="inp_bairo">
+                </div>
+                <div id="inputs">
+                    <h1 id="txt_input">Logradouro/N°</h1>
+                    <input type="text" id="inp_log">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aqui tem 2 botões um volta para o cardapio para continuar comprando e o outro finaliza 
+        a compra levando para um Js que exige a confirmação de compra -->
+    <div id="botoes">
+        <a href="cardapio.html"><button id="botao_padrao">Continuar Comprando</button></a>
+        <button id="botao_padrao" onclick="finCompra()">Finalizar compra</button>
+    </div>
+
+</body>
+
+</html>

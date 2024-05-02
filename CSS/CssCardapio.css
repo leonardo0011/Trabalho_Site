@@ -1,0 +1,248 @@
+*{
+    /* aqui esta tirando toda a formatação padrão do google */
+    margin: 0;
+    padding: 0; 
+}
+
+a{
+    /* Remove o sublinhado de todos os links */
+    text-decoration: none;
+}
+
+.LinhaSuperior{
+    /* faixa branca no superior da pagina */
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: #E9E9E9;
+    padding: 5px;
+}  
+
+body{
+    /* Aqui configuramos a cor de fundo e como vai ser ordenado o resto do site em colunas */
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #E33737, #7D1E1E);
+    overflow-x: hidden;
+}
+
+.inicioHome{
+    /* Aqui é a configuração do cabeçalho tentamos fazer para ser responsivo com o tamanha da tela mas recomendavos ver pela tela do computador 16:9 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    height: 200px;
+}
+
+#barraInicio{
+    /* Aqui é a formatação do texto do cabeçalho */
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: #FFD600;
+}
+
+.doce{
+    /* Aqui tem parte das configuração da tabela dos doces */
+    display: flex;
+    flex-direction: row;    
+}
+
+h1{
+    color: #FFD600;
+    margin: 30px 0 10px 30px;
+    font-size: 4vw;
+}
+
+h2{
+    color: white;
+    margin: 0px 0 0 30px;
+    font-size: 3vw;
+}
+
+.salgado{
+    /* Aqui tem parte das configuração da tabela dos Salgados */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.salgado > button, .salgado > p, .salgado > img{
+    /* Aqui tem parte das configuração da tabela dos Salgados */
+    margin: 0.5vw;
+    height: 100px;
+}
+
+.salgado > p{
+    /* Aqui tem parte das configuração da tabela dos Salgados */
+    display: flex;
+    align-items: center;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+.salgado > div{
+    /* Aqui tem parte das configuração da tabela dos Salgados */
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.salgado > div > input{
+    /* Aqui tem parte das configuração da tabela dos Salgados */
+    height: 30px;
+    width: 2vw;
+    border: none;
+    border-radius: 9px;
+}
+
+.salgado > div > input, .salgado > div > button{
+    /* Aqui tem parte das configuração da tabela dos Salgados */
+    margin: 0.1vw;
+}
+
+#botao_padrao{
+    /* Aqui fizemos um css pronto para ser utilizados nos outros botões das paginas
+    configurando tamanho, fonte, cor de fundo, cor do texto e outros  */
+    height: 3vw;
+    width: 2vw;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 9px;
+    color: #FF0000;
+    font-size: 25px;
+    font: bold;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke-color: #00000000;
+}
+
+#botao_padrao2{
+    /* Aqui fizemos um css pronto para ser utilizados nos outros botões de Adicionar ao carrinho
+    configurando tamanho, fonte, cor de fundo, cor do texto e outros  */
+    height: 3vw;
+    width: 8vw;
+    background-color: white;
+    border: none;
+    border-radius: 9px;
+    color: #FF0000;
+    font-size: 1vw;
+    font: bold;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke-color: #00000000;
+}
+
+#hr_salg{
+    /* Aqui tem a configuração das linhas divisorias dos produtos */
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.doce{
+    /* Aqui tem parte das configuração da tabela dos doces */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.code > button, .doce > p, .doce > img{
+    margin: 0.5vw;
+    height: 100px;
+}
+
+.doce > p{
+    /* Aqui tem parte das configuração da tabela dos doces */
+    display: flex;
+    align-items: center;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+.doce > div{
+    /* Aqui tem parte das configuração da tabela dos doces */
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.doce > div > input{
+    /* Aqui tem parte das configuração da tabela dos doces */
+    height: 30px;
+    width: 2vw;
+    border: none;
+    border-radius: 9px;
+}
+
+.doce > div > input, .doce > div > button{
+    /* Aqui tem parte das configuração da tabela dos doces */
+    margin: 0.1vw;
+}
+
+.festa{
+    /* Aqui tem parte das configuração da tabela do Kit Festa */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.festa > button, .salgado > p, .festa > img{
+    /* Aqui tem parte das configuração da tabela do Kit Festa */
+    margin: 0.5vw;
+    height: 100px;
+}
+
+.festa > p{
+    /* Aqui tem parte das configuração da tabela do Kit Festa */
+    display: flex;
+    align-items: center;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+.festa > div{
+    /* Aqui tem parte das configuração da tabela do Kit Festa */
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.festa > div > input{
+    /* Aqui tem parte das configuração da tabela do Kit Festa */
+    height: 30px;
+    width: 2vw;
+    border: none;
+    border-radius: 9px;
+}
+
+.festa > div > input, .festa > div > button{
+    /* Aqui tem parte das configuração da tabela do Kit Festa */
+    margin: 0.1vw;
+}

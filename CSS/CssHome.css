@@ -1,0 +1,146 @@
+*{
+    /* aqui esta tirando toda a formatação padrão do google */
+    margin: 0;
+    padding: 0; 
+}
+
+a{
+    /* Remove o sublinhado de todos os links */
+    text-decoration: none;
+}
+
+.LinhaSuperior{
+    /* faixa branca no superior da pagina */
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: #E9E9E9;
+    padding: 5px;
+}  
+
+body{
+    /* Aqui configuramos a cor de fundo e como vai ser ordenado o resto do site em colunas */
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #E33737, #7D1E1E);
+    overflow-x: hidden;
+}
+
+.inicioHome{
+    /* Aqui é a configuração do cabeçalho tentamos fazer para ser responsivo com o tamanha da tela mas recomendavos ver pela tela do computador 16:9 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    height: 200px;
+}
+
+#barraInicio{
+    /* Aqui é a formatação do texto do cabeçalho */
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: #FFD600;
+}
+    
+#imagemBolo1{
+    /* Aqui foi configurado a imagem que separa o cabeçalho com o resto do site */
+    display: flex;
+    margin: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url(../IMG/bolo1.png);
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 300px;
+    object-fit: contain;
+}
+
+#promocaoTudo{
+    /* Aqui tem a configuração da parte de promoção */
+    display: flex;
+    flex-direction: row;
+    margin: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 300px;
+}
+
+
+#Promocao{
+    /* Aqui também na parte de promoção mas configurando o texto e a posição dos elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    background-image: url(../IMG/salgado1.png);
+    background-size: cover;
+    font-size: 5vw;
+    color: #FF0000;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 4px 4px 4px #333;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #760000;
+}
+
+
+#fundo {
+    /* Aqui é a parte que leva o cardapio ordenado onde vai ser a pozição das imagens e texto */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5vw;
+    margin-top: 0;
+    margin-bottom: 30px;
+    background: #ff703877;
+    height: 300px;
+}
+
+#txtSobreBotao{
+    /* Aqui é confugurado o tamanho e localização do texto e a fonte */
+    margin-right: 15vh;
+    margin-top: 2vh;
+    font-size: 2vw;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F1CD4E;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+#botao_padrao{
+    /* Aqui fizemos um css pronto para ser utilizados nos outros botões das paginas
+    configurando tamanho, fonte, cor de fundo, cor do texto e outros  */
+    margin-top: 30px;
+    height: 10vw;
+    width: 10vw;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 9px;
+    color: #FF0000;
+    font-size: 25px;
+    font: bold;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke-color: #00000000;
+}
+
+
+h3{
+    /* Aqui tem a configuração da palavra "Cardápio" com a fonte e tamanho */
+    color: white;
+    font-size: 1vw;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}

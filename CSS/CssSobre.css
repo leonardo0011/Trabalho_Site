@@ -1,0 +1,175 @@
+*{
+    /* aqui esta tirando toda a formatação padrão do google */
+    margin: 0;
+    padding: 0; 
+}
+
+a{
+    /* Remove o sublinhado de todos os links */
+    text-decoration: none;
+}
+
+.LinhaSuperior{
+    /* faixa branca no superior da pagina */
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: #E9E9E9;
+    padding: 5px;
+}  
+
+body{
+    /* Aqui configuramos a cor de fundo e como vai ser ordenado o resto do site em colunas */
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #E33737, #7D1E1E);
+    overflow-x: hidden;
+}
+
+.inicioHome{
+    /* Aqui é a configuração do cabeçalho tentamos fazer para ser responsivo com o tamanha da tela mas recomendavos ver pela tela do computador 16:9 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    height: 200px;
+}
+
+#barraInicio{
+    /* Aqui é a formatação do texto do cabeçalho */
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: #FFD600;
+}
+
+#geralSobre{
+    /* Aqui configura a localização do titulo e texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#txtSobre{
+    /* Aqui coloca a fonte e tamanho */
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD600;
+    font-size: 4vw;
+}
+
+#txtLorem{
+    /* Aqui coloca a fonte e tamanho */
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+#Contato{
+    /* Aqui configura a fonte, localização e tamanho dos textos de contato */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD600;
+    font-size: 4vw;
+}
+
+#clickcontatos{
+    /* Aqui configura a fonte, localização e tamanho dos textos de contato */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+#clickcontatos>p{
+    /* Aqui configura a fonte, localização e tamanho dos textos de contato */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+#loc{
+    /* Aqui configura a fonte, localização e tamanho dos textos de onde econtrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD600;
+    font-size: 4vw;
+}
+
+#geralLoc{
+    /* Aqui configura a fonte, localização e tamanho dos textos de onde econtrar */
+    display: flex;
+    margin: 5vw;
+    margin-top: 30px;
+    justify-content: space-around;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+.trabConosco {
+    /* Aqui configura a fonte, localização e tamanho dos textos do botão de trabalhe conosco */
+        text-decoration: none;
+        background-color: #29a71a;
+        padding: 12px 12px;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 100px;
+        
+    }
+    
+    .trabConosco:hover {
+        /* Aqui configura a fonte, localização e tamanho dos textos do botão de trabalhe conosco */
+        background-color: #0f5729;
+    }
+
+    .trabConosco > p > a{
+        /* Aqui configura a fonte, localização e tamanho dos textos do botão de trabalhe conosco */
+        color: white;
+        font-size: 30px;
+        font-family: "Lilita One", sans-serif;
+        display: inline-block;
+    }
+
+
+
